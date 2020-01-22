@@ -1,12 +1,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.kq.pulsar.client</groupId>
+  <groupId>io.kafkaesque.pulsar</groupId>
   <artifactId>pulsar-client-plugin</artifactId>
   <packaging>jar</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>SimpleClient</name>
-  <url>http://maven.apache.org</url>
+  <name>pulsar-client-plugin</name>
+  <description>Plugins for Pulsar Client</description>
+  <url>https://github.com/kafkaesque-io/pulsar-client-plugin</url>
   <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
@@ -83,4 +84,25 @@
       <version>0.10.5</version>
     </dependency>
   </dependencies>
+  <licenses>
+    <license>
+      <name>The Apache License, Version 2.0</name>
+      <url>https://github.com/kafkaesque-io/pulsar-client-plugin/blob/master/LICENSE</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <scm>
+    <connection>scm:git@github.com:kafkaesque-io/pulsar-client-plugin.git</connection>
+    <developerConnection>scm:git@github.com:kafkaesque-io/pulsar-client-plugin.git</developerConnection>
+    <url>https://github.com/kafkaesque-io/pulsar-client-plugin</url>
+  </scm>
+  <developers>
+    <developer>
+      <name>Ming Luo</name>
+      <email>ming.luo@kafkaesque.io</email>
+      <organization>Kafkaesque</organization>
+      <organizationUrl>http://www.kafkaesque.io</organizationUrl>
+    </developer>
+  </developers>
+
 </project>

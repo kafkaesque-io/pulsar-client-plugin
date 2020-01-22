@@ -1,4 +1,4 @@
-package com.kq.pulsar.client.auth.auth0;
+package io.kafkaesque.pulsar.client.auth.auth0;
 
 import java.io.UnsupportedEncodingException;
 import java.util.HashMap;

@@ -1,7 +1,6 @@
-package com.kq.pulsar.client.auth;
+package io.kafkaesque.pulsar.client.auth;
 
-import com.kq.pulsar.client.auth.AuthenticationAuth0;
-import com.kq.pulsar.client.auth.auth0.Auth0JWT;
+import io.kafkaesque.pulsar.client.auth.auth0.Auth0JWT;
 
 import org.apache.pulsar.client.api.Authentication;
 

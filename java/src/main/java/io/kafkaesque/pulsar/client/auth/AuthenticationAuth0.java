@@ -1,4 +1,4 @@
-package com.kq.pulsar.client.auth;
+package io.kafkaesque.pulsar.client.auth;
 
 import com.google.common.base.Charsets;
 
