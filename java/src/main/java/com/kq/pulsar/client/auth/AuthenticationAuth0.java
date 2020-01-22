@@ -40,12 +40,11 @@ public class AuthenticationAuth0 implements Authentication, EncodedAuthenticatio
 
     @Override
     public String getAuthMethodName() {
-        return "token";
+        return "auth0";
     }
 
     @Override
     public AuthenticationDataProvider getAuthData() throws PulsarClientException {
-        // return new AuthenticationDataToken(tokenSupplier);
         return new AuthenticationDataAuth0(tokenSupplier);
     }
 

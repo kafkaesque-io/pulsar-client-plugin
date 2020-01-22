@@ -62,9 +62,14 @@ public class Auth0JWT {
                 .body(bodyMap)
                 .asJson();
 
-        System.out.println(response.getStatus());
-        JSONObject jsonObj = response.getBody().getObject();
+        Unirest.config().reset();
+        int statusCode = response.getStatus();
+        //TODO: add retry-after 503, 429, 301
+        if (statusCode != 200) {
+            throw new JWTVerificationException("invalide auth0.com status code " + statusCode);
+        }
 
+        JSONObject jsonObj = response.getBody().getObject();
         return jsonObj;
     }
 
