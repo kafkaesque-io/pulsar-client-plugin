@@ -3,7 +3,8 @@
   <groupId>io.kafkaesque.pulsar</groupId>
   <artifactId>pulsar-client-plugin</artifactId>
   <packaging>jar</packaging>
-  <version>0.0.2</version>
+  <version>0.0.3-SNAPSHOT</version>
+
 
   <name>pulsar-client-plugin</name>
   <description>Plugins for Pulsar Client</description>
