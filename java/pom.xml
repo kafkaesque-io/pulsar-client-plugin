@@ -3,7 +3,7 @@
   <groupId>io.kafkaesque.pulsar</groupId>
   <artifactId>pulsar-client-plugin</artifactId>
   <packaging>jar</packaging>
-  <version>0.0.3-SNAPSHOT</version>
+  <version>0.0.4</version>
 
 
   <name>pulsar-client-plugin</name>
@@ -151,7 +151,7 @@
     <connection>scm:git:git@github.com:kafkaesque-io/pulsar-client-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:kafkaesque-io/pulsar-client-plugin.git</developerConnection>
     <url>https://github.com/kafkaesque-io/pulsar-client-plugin</url>
-    <tag>xchange-0.0.2</tag>
+    <tag>xchange-0.0.4</tag>
   </scm>
   <developers>
     <developer>
