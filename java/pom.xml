@@ -148,8 +148,8 @@
     </license>
   </licenses>
   <scm>
-    <connection>scm:git:ssh://git@github.com:kafkaesque-io/pulsar-client-plugin.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com:kafkaesque-io/pulsar-client-plugin.git</developerConnection>
+    <connection>scm:git:git@github.com:kafkaesque-io/pulsar-client-plugin.git</connection>
+    <developerConnection>scm:git:git@github.com:kafkaesque-io/pulsar-client-plugin.git</developerConnection>
     <url>https://github.com/kafkaesque-io/pulsar-client-plugin</url>
   </scm>
   <developers>
