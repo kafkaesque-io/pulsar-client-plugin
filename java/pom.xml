@@ -3,7 +3,7 @@
   <groupId>io.kafkaesque.pulsar</groupId>
   <artifactId>pulsar-client-plugin</artifactId>
   <packaging>jar</packaging>
-  <version>0.0.3-SNAPSHOT</version>
+  <version>0.0.4-SNAPSHOT</version>
 
 
   <name>pulsar-client-plugin</name>
@@ -81,6 +81,20 @@
         <version>3.0.0-M1</version>
       </plugin>
 
+      <!-- checksum plugin -->
+      <plugin>
+        <groupId>net.ju-n.maven.plugins</groupId>
+        <artifactId>checksum-maven-plugin</artifactId>
+        <version>1.2</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>artifacts</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
     </plugins>
   </build>
   <dependencies>
@@ -140,6 +154,8 @@
       <version>0.10.5</version>
     </dependency>
   </dependencies>
+
+  <!--Maven central publish required -->
   <licenses>
     <license>
       <name>The Apache License, Version 2.0</name>
@@ -151,7 +167,7 @@
     <connection>scm:git:git@github.com:kafkaesque-io/pulsar-client-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:kafkaesque-io/pulsar-client-plugin.git</developerConnection>
     <url>https://github.com/kafkaesque-io/pulsar-client-plugin</url>
-    <tag>xchange-0.0.2</tag>
+    <tag>xrelease-0.0.5</tag>
   </scm>
   <developers>
     <developer>
