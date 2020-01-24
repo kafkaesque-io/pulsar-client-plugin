@@ -6,7 +6,33 @@ Integration of auth0 enables Pulsar client authenticated against [auth0](https:/
 
 Auth0 integration consists of the client side plugin and a broker auth plugin. The client plugin generates an auth0 jwt, which in turn can be autheticated and authorized by the broker side. The broker plugin has to be configured on Pulsar, not part of this repo. Please contact [Kafkaesque](https://kafkaesque.io/contact/#) to enable the broker side authorization.
 
+The Jar artefact is loaded on GitHub package registry.
+
+In .m2/settings.xml,
+``` .m2/settings.xml
+<repositories>
+  <repository>
+    <id>github</id>
+    <url>https://maven.pkg.github.com/kafkaesque-io/pulsar-client-plugin</url>
+  </repository>
+</repositories>
+
+<servers>
+  <server>
+    <id>github</id>
+    <username>GITHUB_USERNAME</username>
+    <password>GITHUB_TOKEN</password>
+  </server>
+</servers>
+```
+
+In pom.xml,
 ```maven
+<dependency>
+  <groupId>io.kafkaesque.pulsar</groupId>
+  <artifactId>pulsar-client-plugin</artifactId>
+  <version>0.0.6</version>
+</dependency>
 
 ```
 
