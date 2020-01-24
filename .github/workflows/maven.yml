@@ -11,7 +11,7 @@ on:
       - created 
 
 jobs:
-  build java:
+  build_java:
     runs-on: ubuntu-latest
     steps:
     - name: Check out code
