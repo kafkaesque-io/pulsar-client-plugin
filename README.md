@@ -27,7 +27,7 @@ In .m2/settings.xml,
 ```
 
 In pom.xml,
-```maven
+```pom.xml
 <dependency>
   <groupId>io.kafkaesque.pulsar</groupId>
   <artifactId>pulsar-client-plugin</artifactId>
@@ -36,7 +36,8 @@ In pom.xml,
 
 ```
 
-``` java
+Java Client example:
+``` example.java
 String domain = "https://<your auth0 domain>.auth0.com/oauth/token";
 String clientId = "";
 String clientSecret = "";
