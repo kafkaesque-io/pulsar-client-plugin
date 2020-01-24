@@ -25,5 +25,6 @@ jobs:
         java-version: 1.8
 
     - name: Build with Maven
-      cd ./java
-      run: mvn -B package --file pom.xml
+      run: |
+        cd ./java
+        mvn -B package --file pom.xml
