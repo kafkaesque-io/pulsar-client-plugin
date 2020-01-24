@@ -25,6 +25,8 @@ public class AuthenticationAuth0 implements Authentication, EncodedAuthenticatio
     private static final long serialVersionUID = 1L;
     private Supplier<String> tokenSupplier;
 
+    private String authMethod = AuthMethod.AUTH0;
+
     public AuthenticationAuth0(String token) {
         this(() -> token);
     }
@@ -40,7 +42,15 @@ public class AuthenticationAuth0 implements Authentication, EncodedAuthenticatio
 
     @Override
     public String getAuthMethodName() {
-        return "auth0";
+        return authMethod;
+    }
+
+    public void setAuthMethodName(String name) {
+        if (AuthMethod.supportedMethods.contains(name)) {
+            authMethod = name;
+        } else {
+            throw new IllegalArgumentException("unsupport auth method " + name);
+        }
     }
 
     @Override

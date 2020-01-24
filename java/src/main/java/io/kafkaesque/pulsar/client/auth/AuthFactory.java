@@ -9,7 +9,7 @@ public final class AuthFactory {
     private AuthFactory() {}
 
     /**
-     * Request JWT from autho and pass the JWT to pulsar broker.
+     * Request JWT from auth0 and pass the JWT to pulsar broker.
      * @param domain
      * @param clientId
      * @param clientSecret
@@ -20,4 +20,22 @@ public final class AuthFactory {
         return new AuthenticationAuth0(Auth0JWT.create(domain, clientId, clientSecret, audience).generateAndCheck());
 
     }
+
+    /**
+     * Request JWT from auth0 with optional authMethod.
+     * @param domain
+     * @param clientId
+     * @param clientSecret
+     * @param audience
+     * @param authMethod
+     * @return
+     */
+    public static Authentication auth0(String domain, String clientId, String clientSecret, String audience, String authMethod) {
+        String token = Auth0JWT.create(domain, clientId, clientSecret, audience).generateAndCheck();
+
+        AuthenticationAuth0 auth0 = new AuthenticationAuth0(token);
+        auth0.setAuthMethodName(authMethod);
+        return auth0;
+    }
+
 }
