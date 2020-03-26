@@ -2,11 +2,11 @@
 Pulsar client plugin for auth0, aws, and etc.
 
 ## auth0 integration
-Integration of auth0 enables Pulsar client authenticated against [auth0](https://www.auth0.com) backend instead of the default Pulsar token. The authentication follows [the recommaned M2M flow](https://auth0.com/blog/using-m2m-authorization/). 
+Integration of auth0 enables Pulsar client authenticated against [auth0](https://www.auth0.com) backend instead of the default Pulsar token. The authentication follows [the recommended M2M flow](https://auth0.com/blog/using-m2m-authorization/). 
 
-Auth0 integration consists of the client side plugin and a broker auth plugin. The client plugin generates an auth0 jwt, which in turn can be autheticated and authorized by the broker side. The broker plugin has to be configured on Pulsar, not part of this repo. Please contact [Kafkaesque](https://kafkaesque.io/contact/#) to enable the broker side authorization.
+Auth0 integration consists of the client side plugin and a broker auth plugin. The client plugin generates an auth0 JWT, which in turn can be authenticated and authorized by the broker side. The broker plugin has to be configured on Pulsar and is not part of this repo. Please contact [Kafkaesque](https://kafkaesque.io/contact/#) to enable the broker side plugin.
 
-The Jar artefact is loaded on GitHub package registry.
+The Jar artifact is loaded on GitHub package registry.
 
 In .m2/settings.xml,
 ``` .m2/settings.xml
