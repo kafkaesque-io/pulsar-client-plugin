@@ -23,7 +23,7 @@ public class AuthenticationAuth0 implements Authentication, EncodedAuthenticatio
      *
      */
     private static final long serialVersionUID = 1L;
-    private Supplier<String> tokenSupplier;
+    protected Supplier<String> tokenSupplier;
 
     private String authMethod = AuthMethod.AUTH0;
 

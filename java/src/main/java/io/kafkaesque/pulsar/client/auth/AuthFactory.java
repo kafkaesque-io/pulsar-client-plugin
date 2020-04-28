@@ -1,6 +1,7 @@
 package io.kafkaesque.pulsar.client.auth;
 
 import io.kafkaesque.pulsar.client.auth.auth0.Auth0JWT;
+import io.kafkaesque.pulsar.client.auth.cognito.CognitoJWT;
 
 import org.apache.pulsar.client.api.Authentication;
 
@@ -36,6 +37,19 @@ public final class AuthFactory {
         AuthenticationAuth0 auth0 = new AuthenticationAuth0(token);
         auth0.setAuthMethodName(authMethod);
         return auth0;
+    }
+
+    /**
+     * Request JWT from AWS Cognito and pass the JWT to pulsar broker.
+     * @param domain
+     * @param clientId
+     * @param clientSecret
+     * @param scope
+     * @return
+     */
+    public static Authentication cognito(String domain, String clientId, String clientSecret, String scope) {
+        return new AuthenticationCognito(CognitoJWT.create(domain, clientId, clientSecret, scope).generateAndCheck());
+
     }
 
 }
