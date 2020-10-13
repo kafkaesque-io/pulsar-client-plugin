@@ -3,7 +3,7 @@
   <groupId>io.kafkaesque.pulsar</groupId>
   <artifactId>pulsar-client-plugin</artifactId>
   <packaging>jar</packaging>
-  <version>0.0.7</version>
+  <version>0.0.8</version>
 
 
   <name>pulsar-client-plugin</name>
@@ -122,7 +122,7 @@
     <dependency>
       <groupId>com.google.guava</groupId>
       <artifactId>guava</artifactId>
-      <version>21.0</version>
+      <version>29.0-jre</version>
     </dependency>
     <!-- dependency>
       <groupId>ch.qos.logback</groupId>
@@ -167,14 +167,14 @@
     <connection>scm:git:git@github.com:kafkaesque-io/pulsar-client-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:kafkaesque-io/pulsar-client-plugin.git</developerConnection>
     <url>https://github.com/kafkaesque-io/pulsar-client-plugin</url>
-    <tag>xrelease-0.0.6</tag>
+    <tag>xrelease-0.0.7</tag>
   </scm>
   <developers>
     <developer>
       <name>Ming Luo</name>
-      <email>ming.luo@kafkaesque.io</email>
-      <organization>Kafkaesque</organization>
-      <organizationUrl>http://www.kafkaesque.io</organizationUrl>
+      <email>ming.luo@kesque.com</email>
+      <organization>Kesque</organization>
+      <organizationUrl>http://www.kesque.com</organizationUrl>
     </developer>
   </developers>
 
